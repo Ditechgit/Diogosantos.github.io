@@ -85,7 +85,7 @@ nav {
 .imagem-header {
   border-radius: 50%;
   height: 30rem;
-  box-shadow: -10px 5px 4px #00e1f5;
+  box-shadow: 0 0 8px 6px #00e1f5;
 }
 nav a {
   color: #ffffff;
@@ -114,7 +114,7 @@ ul {
   gap: 7rem;
 }
 .box {
-  box-shadow: -10px 5px 4px #00e1f5;
+  box-shadow: 0 0 8px 2px #00e1f5;
   background: linear-gradient(68.15deg, #32494b 16.62%, #000000 85.61%);
   display: flex;
   flex-direction: column;
