@@ -14,19 +14,34 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <nav>
-          <div class="logo">
-            <a href="#"><img src="imagens/logo.png" height="50px" width="100px" alt=""/></a>
-          </div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#skill">Habilidades</a></li>
-            <li><a href="#projeto">Projetos</a></li>
-            <li><a href="#">Contatos</a></li>
-          </ul>
-        </nav>
-      </div>
+      <section class="menu">
+        <div class="navbar">
+          <nav>
+            <div class="logo">
+              <a class="logotipo" href="#">
+                <img src="imagens/logo-1.png" height="40px" width="80px" alt="logo 1"/>
+                <p>Diogo <span>Santos</span></p>
+              </a>
+            </div>
+            <ul>
+              <li class="hideMobile"><a href="#">Home</a></li>
+              <li class="hideMobile"><a href="#skill">Habilidades</a></li>
+              <li class="hideMobile"><a href="#projeto">Projetos</a></li>
+              <li class="hideMobile"><a href="#">Contatos</a></li>
+              <li class="hideDesktop" onclick="showSidebar()"><i class='bx bx-menu'></i></li>
+            </ul>
+
+            <ul class="vertical-menu">
+              <li  onclick="hideSidebar()"><i class='bx bx-x' ></i></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#skill">Habilidades</a></li>
+              <li><a href="#projeto">Projetos</a></li>
+              <li><a href="#">Contatos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+        
       <section class="conteudo-principal">
         <div class="col-1">
           <p>Olá, me chamo</p>
@@ -40,9 +55,10 @@
         <img class="imagem-header" src="imagens/profile.jpg" />
       </section>
     </header>
+
     <main>
       <section class="skills" id="skill">
-        <h3>Habilidades</h3>
+        <h3>Habilidades<hr></h3>
         <div class="col-skill">
           <div class="box">
             <p>JavaScript</p>
@@ -62,8 +78,10 @@
           </div>
         </div>
       </section>
+
       <section class="projetos" id="projeto">
-        <h3>Projetos</h3>
+        <h3>Projetos<hr></h3>
+        
         <div class="col-projeto">
           <div class="box">
             <img src="imagens/Amellie-1.png" alt="Amellie-1" />
@@ -84,6 +102,7 @@
               <button>Prévia<i class="bx bxs-right-arrow-circle"></i></button>
             </div>
           </div>
+
           <div class="col-projeto">
             <div class="box">
               <img src="imagens/embreve.png" width="474px" alt="embreve" />
@@ -104,7 +123,9 @@
           </div>  
         </div>
       </section>
+
     </main>
+    
     <footer>
       <section class="contato">
         <div class="footer-col">
@@ -131,5 +152,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
