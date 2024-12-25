@@ -250,14 +250,6 @@ footer {
 	}
 }
 @media screen and (max-width: 800px) {
-  
-  .conteudo-principal {
-    width: 100%;
-    flex-direction: column;
-  }
-  .body{
-    width: 100%;
-  }
   .hideMobile {
 		display: none;
 	}
@@ -282,12 +274,6 @@ footer {
   .skills .box p {
     font-size: 0.8rem;
   }
-  .col-projeto {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .col-projeto .box img {
     height: 180px;
     width: 100%;
@@ -296,10 +282,35 @@ footer {
     flex-direction: column;
     padding: 10px;
   }
-  ul{
+  .link-contato ul{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 20px;
   }
 
 }
+
+@media screen and (max-width: 1000px) {
+  .conteudo-principal {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .col-projeto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col-skill {
+    gap: 4rem;
+  }
+  /* footer */
+  .footer-col{
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+}
+
