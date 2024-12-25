@@ -310,6 +310,7 @@ footer {
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
   }
 
 }
