@@ -32,7 +32,7 @@
             </ul>
 
             <ul class="vertical-menu">
-              <li  onclick="hideSidebar()"><i class='bx bx-x' ></i></li>
+              <li onclick="hideSidebar()"><i class='bx bx-x' ></i></li>
               <li><a href="#">Home</a></li>
               <li><a href="#skill">Habilidades</a></li>
               <li><a href="#projeto">Projetos</a></li>
@@ -44,12 +44,12 @@
         
       <section class="conteudo-principal">
         <div class="col-1">
-          <p>Olá, me chamo</p>
-          <h1>Diogo Santos</h1>
-          <h2>Desenvolvedor Front-End</h2>
+          <h1>Seu negócio digital está<br>pronto para se destacar?<br><span>Eleve-o a outro nível com um <br>Front-End de qualidade!</span></h1>
+          <p>Olá! Sou Diogo Santos, desenvolvedor Front-End<br>com especialidade em React.js, JavaScript, HTML<br>e CSS. Proporciono as empresas, uma forma de<br>transformar seus sonhos em código.<br>Vamos conversar?</p>
           <div class="button">
+            <a href="https://www.linkedin.com/in/diogo-jesus-barão-dos-santos-248834341/" target="_blank"><button class="conteudo-botao">Linkedin<i class='bx bxl-linkedin'></i></button></a>
+            <a href="arquivos/Curriculo.pdf" download="Curriculo.pdf" type="application/pdf" target="_blank"><button class="conteudo-botao">Curriculo<i class="bx bxs-file-pdf"></i></button></a>
             <a href="https://github.com/Ditechgit" target="_blank"><button class="conteudo-botao">Github<i class="bx bxl-github"></i></button></a>
-            <a href="arquivos/Curriculo.pdf" download="Curriculo.pdf" type="application/pdf" target="_blank"><button class="conteudo-botao">CV<i class="bx bxs-file-pdf"></i></button></a>
           </div>
         </div>
         <img class="imagem-header" src="imagens/profile.jpg" />
@@ -61,6 +61,10 @@
         <h3>Habilidades<hr></h3>
         <div class="col-skill">
           <div class="box">
+            <p>React.js</p>
+            <i class="bx bxl-react"></i>
+          </div>
+          <div class="box">
             <p>JavaScript</p>
             <i class="bx bxl-javascript"></i>
           </div>
@@ -71,10 +75,6 @@
           <div class="box">
             <p>HTML5</p>
             <i class="bx bxl-html5"></i>
-          </div>
-          <div class="box">
-            <p>React.JS</p>
-            <i class="bx bxl-react"></i>
           </div>
         </div>
       </section>
@@ -99,7 +99,22 @@
                 <a href="https://github.com/Ditechgit/Primeiro-E-commerce"
                   target="_blank">Code<i class="bx bxl-github"></i></a>
               </button>
-              <button>Prévia<i class="bx bxs-right-arrow-circle"></i></button>
+              <button class="modal-btn">Prévia<i class="bx bxs-right-arrow-circle"></i></button> <!-- Ao apertar o botao abrirá o modal -->
+              <dialog> <!-- por meio do js, fara com q o dialog abra com seu conteudo modal -->
+                <div class="modal">
+                  <div class="modal-content">
+                    <div class="modal-col-2">
+                      <div class="slide">
+                        <img src="imagens/Amellie-1.png" width="100%" alt="Amellie-1" />
+                      </div>
+                    </div>
+                    <div class="modal-col-2">
+                      <p>Conteudo para texto</p>
+                    </div>  
+                    <span class="close">&times;</span>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
 
@@ -117,11 +132,7 @@
                 <button>
                   <a href="#" target="_blank">Code<i class="bx bxl-github"></i></a>
                 </button>
-                <button onclick="showPreview()">Prévia<i class="bx bxs-right-arrow-circle"></i></button>
-                <div class="content">
-                  <i onclick="hidePreview()" class='bx bx-x' ></i>
-                  
-                </div>
+                <button><a href="#">Prévia</a><i class="bx bxs-right-arrow-circle"></i></button>
               </div>
             </div>
           </div>  
