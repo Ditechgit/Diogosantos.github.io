@@ -107,6 +107,10 @@ nav {
   height: 30rem;
   box-shadow: 0 0 8px 6px #27c8e6;
 }
+.imagem-header:hover {
+  box-shadow: 0 0 8px 12px #27c8e6;
+  transition: 1.2s ease;
+}
 nav a {
   color: #ffffff;
 }
@@ -160,6 +164,7 @@ ul li{
   justify-content: center;
   align-items: center;
   padding: 50px;
+
 }
 
 .col-skill {
@@ -175,6 +180,19 @@ ul li{
   color: #ffffff;
   border-radius: 15px;
   padding: 10px;
+}
+
+.box:hover {
+  box-shadow: 0 0 8px 5px #27c8e6;
+  background: linear-gradient(68.15deg, #32494b 16.62%, #000000 85.61%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s ease;
 }
 
 .skills .box i {
@@ -217,18 +235,26 @@ ul li{
   color: #000000;
   border: none;
 }
+.tecnologias ul li:hover{
+  cursor: pointer;
+}
 .links {
   padding: 1rem;
 }
 .links button {
-  background: #ffffff;
-  color: #000000;
+  background: transparent;
+  color: #ffffff;
   width: 10rem;
   height: 3rem;
-  border: none;
+  border: 2px solid #27c8e6;
   border-radius: 15px;
   text-decoration: none;
   font-size: 16px;
+}
+.links button:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: 1s ease;
 }
 
 /* ---------------------------------------------------- Rodapé ----------------------------------------------------*/
@@ -241,22 +267,49 @@ footer {
 }
 .footer-col {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
 }
 .contato a:visited {
   color: #fff;
 }
 .link-contato i {
-  padding-right: 10px;
+  padding: 40px 10px;
   font-size: 20px;
 }
+.link-contato i:hover{
+  color: #27c8e6;
+  cursor: pointer;
+}
 /* ------------------------------------------------ Responsividade ------------------------------------------------*/
-@media (min-width: 800px) {
+
+@media (min-width: 1000px) {
 	.hideDesktop {
 		display: none;
 	}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 320px) {
+  .imagem-header {
+    width: 15rem;
+    height: 10rem;
+  }
+  .col-projeto .box img {
+    height: 160px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  button{
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .tecnologias ul{
+    gap: 7px;
+  }
+}
+@media screen and (max-width: 1000px) {
   .hideMobile {
 		display: none;
 	}
@@ -285,19 +338,6 @@ footer {
     height: 180px;
     width: 100%;
   }
-  .footer-col{
-    flex-direction: column;
-    padding: 10px;
-  }
-  .link-contato ul{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-  }
-
-}
-
-@media screen and (max-width: 1000px) {
   .conteudo-principal {
     width: 100%;
     flex-direction: column;
@@ -319,6 +359,27 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 50px;
   }
-
 }
 
+
+@media screen and (max-width: 1500px) {
+  .footer-col{
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-contato ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-projeto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
