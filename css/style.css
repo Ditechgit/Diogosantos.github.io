@@ -427,3 +427,9 @@ html {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 1700px) {
+  .col-projeto {
+    gap: 1rem;
+  }
+}
