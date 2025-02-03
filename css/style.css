@@ -6,14 +6,15 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+#body{
+  background-image: url(../imagens/background.png);
+  background-size: cover;
+}
 
 body {
   font-family: "poppins", sans-serif;
-  background-repeat: no-repeat;
-  background-image: url(/imagens/background.png);
-  background-repeat: repeat-y;
-  background-size: cover;
 }
+
 main {
   margin-bottom: 48px;
   border-top: 0.4px solid #27c8e6;
