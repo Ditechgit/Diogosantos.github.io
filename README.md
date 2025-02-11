@@ -5,3 +5,4 @@ O meu interesse em fazer este projeto de portfolio, teve como foco, mostrar minh
 e aprender mais sobre as próprias ferramentas utilizadas.
 
 •HTML - Foram colocadas algumas divisões por section, e por tags de semântica, como: header, main, footer e entre outos.
+•JavaScript - Usei dois arquivos javascript para algumas funções: criar um botão que ao rolar a página ele aparece, e ao apertar o mesmo, a página volta ao topo.
